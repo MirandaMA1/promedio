@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title< Sumador de Numeros > </title> 
+    </head>
+
+ <body >
+    <h1> Sumador de Numeros </h1>
+
+    <label for="num1">Numero 1 </label>
+    <input type="number" id="num1">
+
+    <label for="num2">Numero 2 </label>
+    <input type="number" id="num2">
+
+    <button onclick="sumar()"> Sumar </button>
+    <p id="resultado"></p>
+
+
+    
+    <h2>Restador de Numeros </h2>
+
+    <label for="num3">Numero 3 </label>
+    <input type="number" id="num3">
+
+    <label for="num4">Numero 4 </label>
+    <input type="number" id="num4">
+
+    <button onclick="Restar()"> Restar </button>
+    <p id="igual"></p>
+
+
+
+
+        
+    <h2>PROMEDIO </h2>
+
+    <label for="P1"> PARCIAL 1 </label>
+    <input type="number" id="P1">
+
+    <label for="P2"> PARCIAL 2 </label>
+    <input type="number" id="P2">
+    
+    <label for="P3"> PARCIAL 3 </label>
+    <input type="number" id="P3">
+
+    <button onclick="promedio()"> PROMEDIAR </button>
+    <p id="prom"></p>
+
+
+
+
+
+    <script>
+        function sumar() {
+            var num1=parseFloat(document.getElementById('num1').value);
+            var num2=parseFloat(document.getElementById('num2').value);
+
+            var resultado= num1 + num2 ;
+
+            document.getElementById('resultado').innerText= "El resultado de la suma es:" + resultado;
+
+        }
+
+        function Restar() {
+        var num3=parseFloat(document.getElementById('num3').value);
+        var num4=parseFloat(document.getElementById('num4').value);
+
+        var igual= num3 - num4 ;
+
+        document.getElementById('igual').innerText= "El resultado de la resta es:" + igual;
+        }
+
+        function promedio() {
+        var P1=parseFloat(document.getElementById('P1').value);
+        var P2=parseFloat(document.getElementById('P2').value);
+        var P3=parseFloat(document.getElementById('P3').value);
+
+        var prom= (P1+P2+P3)/3;
+
+        document.getElementById('prom').innerText= "El resultado de el promedio es:" + prom;
+        }
+
+
+
+    </script>
+
+
+ </body>   
+</html>
